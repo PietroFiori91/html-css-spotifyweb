@@ -66,6 +66,10 @@ ____________ */
   border: 5px dotted gray;
 }
 
+.fixed {
+  position: fixed;
+}
+
 /* FLEX */
 /* 
 ____________
@@ -101,19 +105,91 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  background-color: var(--color-nav);
 }
 
 .aside-nav {
   width: 150px;
   flex-shrink: 0;
+  background-color: black;
 }
 
 /* terzo */
 
 .main-col {
   flex-grow: 1;
+  background-color: var(--color-main);
+  /* overflow: scroll; */
 }
 
 .upgrade {
   flex-shrink: 0;
+  align-self: flex-end;
+  padding: 1rem 0.5rem;
+}
+
+/* general estetic */
+/* 
+____________
+____________
+____________
+____________ */
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+li {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background-color: rgb(60, 60, 60);
+}
+
+.filters {
+  padding: 1rem 0;
+}
+
+.row {
+  margin: 2rem 0;
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  max-width: 200px;
+  aspect-ratio: 1/1;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h4 {
+  text-align: center;
+  font-size: 0.9rem;
 }
