@@ -30,6 +30,19 @@ ____________ */
   color: gray;
 }
 
+.main-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.7rem 2.1rem;
+  border-radius: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
 .border-blue {
   border: 5px dotted blue;
 }
@@ -90,13 +103,15 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .player-section {
   height: 75px;
   flex-shrink: 0;
   display: flex;
+  /* position: fixed; */
+  /* z-index: 1; */
 }
 
 /* secondo */
@@ -113,6 +128,7 @@ body {
   width: 150px;
   flex-shrink: 0;
   background-color: black;
+  /* z-index: 1; */
 }
 
 /* terzo */
@@ -120,15 +136,26 @@ body {
 .main-col {
   flex-grow: 1;
   background-color: var(--color-main);
-  /* overflow: scroll; */
+  overflow: scroll;
+  /* z-index: 0; */
 }
-
+/* _________________________________________________ */
+/* _________________________________________________ */
+/* _________________________________________________ */
+/* _________________________________________________ */
+/* _________________________________________________ */
+/* _________________________________________________ */
+/* _________________________________________________ */
 .upgrade {
   flex-shrink: 0;
-  align-self: flex-end;
-  padding: 1rem 0.5rem;
+  padding: 0.8rem 0.4rem;
 }
 
+.upgrade-container {
+  display: flex;
+  align-self: flex-end;
+  /* z-index: 1; */
+}
 /* general estetic */
 /* 
 ____________
@@ -153,14 +180,16 @@ footer {
   align-items: center;
   padding: 1rem 0.5rem;
   background-color: rgb(60, 60, 60);
+  /* z-index: 1; */
 }
 
 .filters {
   padding: 1rem 0;
+  background-color: var(--color-main);
 }
 
 .row {
-  margin: 2rem 0;
+  margin: 1rem 1rem;
 }
 
 .col {
@@ -169,7 +198,7 @@ footer {
   gap: 1rem;
 }
 .card {
-  max-width: 200px;
+  width: calc(100% / 6.5); /* NON CORRETTO !! */
   aspect-ratio: 1/1;
 }
 
@@ -185,11 +214,34 @@ img {
 h3 {
   padding-bottom: 0.5rem;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 h4 {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* MEDIA QUERY */
+/* 
+____________
+____________
+____________
+____________ */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
 }
