@@ -125,10 +125,12 @@ body {
 }
 
 .aside-nav {
-  width: 150px;
   flex-shrink: 0;
   background-color: black;
-  /* z-index: 1; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
 }
 
 /* terzo */
@@ -223,6 +225,39 @@ h4 {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
+.ul-aside ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+}
+
+hr {
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.li-home {
+  border-left: 3px solid greenyellow;
+  padding-left: 1.5rem;
+}
+/* .ul-aside-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ul-aside-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.ul-aside-3 {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+} */
 
 /* MEDIA QUERY */
 /* 
