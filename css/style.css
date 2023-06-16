@@ -130,7 +130,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 13%;
+  gap: 8%;
 }
 
 /* terzo */
@@ -208,9 +208,14 @@ h2 {
   padding-bottom: 2rem;
 }
 
-img {
+.card img {
+  width: 200px;
+  height: auto;
   max-width: 100%;
   padding-bottom: 0.5rem;
+}
+.logo img {
+  height: 45px;
 }
 
 h3 {
