@@ -153,7 +153,7 @@ ____________ */
 ul {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -163,11 +163,16 @@ li {
   font-weight: 600;
 }
 
+/* filters */
+
 .filters {
   padding: 1rem 0;
   background-color: var(--color-main);
 }
 
+.underline-green {
+  border-bottom: 2px solid greenyellow;
+}
 /* main music section  */
 /* 
 ____________
@@ -201,9 +206,6 @@ h2 {
   /* height: auto; */
   width: 100%;
   padding-bottom: 0.5rem;
-}
-.logo img {
-  height: 45px;
 }
 
 .rounded-img {
@@ -247,12 +249,23 @@ ____________ */
   padding-right: calc(var(--my-gap) * 2);
 }
 
+.logo img {
+  height: 40px;
+  margin-bottom: 2rem;
+}
+
 .playlist-ul li {
   padding-right: 5rem;
 }
+
+.ul-aside-1 i {
+  font-size: 1.5rem;
+}
+
 .ul-aside ul {
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
 }
 
 .ul-aside-2 {
@@ -267,12 +280,54 @@ ____________ */
 hr {
   margin-top: 0.8rem;
   margin-bottom: 1.2rem;
+  margin-left: 1rem;
 }
 
 .li-home {
   border-left: 3px solid greenyellow;
 }
 
+.padding-1 {
+  padding: 1rem 0;
+}
+
+.padding-orizzontal {
+  padding: 0 1rem;
+}
+
+.padding-tot {
+  padding: 1rem 1rem;
+}
+
+.fa-plus {
+  background-color: gray;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  margin: 0 1rem;
+}
+
+.install-app {
+  font-size: 0.8rem;
+}
+
+.fa-arrow-down {
+  font-size: 0.5rem;
+  margin-right: 0.8rem;
+  padding: 2px 2px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.fa-user {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+}
 /* footer */
 /* 
 ____________
@@ -283,7 +338,7 @@ ____________ */
 footer {
   justify-content: space-between;
   align-items: center;
-  padding: 2.8rem 0.5rem;
+  padding: 2.8rem 1rem;
   background-color: rgb(60, 60, 60);
 }
 
