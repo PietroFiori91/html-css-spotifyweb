@@ -628,4 +628,28 @@ ____________ */
   .player-right i {
     font-size: 0.6rem;
   }
+
+  .line {
+    background-color: gray;
+    border-radius: 1px;
+    max-width: 100%;
+    width: 15vw;
+  }
+
+  /* .line-s {
+    border: 2px solid;
+    border-radius: 1px;
+    max-width: 100%;
+    width: 25%;
+  } */
+
+  .small-line-gray {
+    max-width: 100%;
+    width: 20px;
+  }
+
+  .small-line-white {
+    max-width: 100%;
+    width: 8px;
+  }
 }
