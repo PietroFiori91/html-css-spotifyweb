@@ -201,8 +201,8 @@ h2 {
 
 /* IMMAGINI SI SOVRAPPONGONO */
 .card img {
-  max-width: 200px;
-  min-width: 200px;
+  /* max-width: 200px;
+  min-width: 200px; */
   /* height: auto; */
   width: 100%;
   padding-bottom: 0.5rem;
@@ -364,11 +364,11 @@ footer {
 }
 
 .footer-mid-top i {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .fa-circle-play {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .footer-mid-bottom {
@@ -385,7 +385,7 @@ footer {
   background-color: gray;
   border-radius: 1px;
   max-width: 100%;
-  width: 400px;
+  width: 35vw;
 }
 
 .line-s {
@@ -408,14 +408,14 @@ footer {
 }
 
 .player-right i {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .small-line-gray {
   background-color: gray;
   border-radius: 1px;
   max-width: 100%;
-  width: 100px;
+  width: 10vw;
   height: 4px;
 }
 
@@ -440,10 +440,21 @@ ____________ */
 }
 
 @media screen and (max-width: 992px) {
+  .card {
+    width: calc((100% / 4) - var(--my-gap));
+    aspect-ratio: 1/1;
+  }
 }
 
 @media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 576px) {
+  .card {
+    width: calc((100% / 2) - var(--my-gap));
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (max-width: 440px) {
 }
