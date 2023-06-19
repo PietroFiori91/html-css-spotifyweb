@@ -166,6 +166,11 @@ li {
 /* filters */
 
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  max-height: 10px;
   padding: 1rem 0;
   background-color: var(--color-main);
 }
@@ -199,11 +204,7 @@ h2 {
   padding-bottom: 2rem;
 }
 
-/* IMMAGINI SI SOVRAPPONGONO */
 .card img {
-  /* max-width: 200px;
-  min-width: 200px; */
-  /* height: auto; */
   width: 100%;
   padding-bottom: 0.5rem;
 }
@@ -447,6 +448,49 @@ ____________ */
 }
 
 @media screen and (max-width: 768px) {
+  /* FOOTER */
+
+  footer {
+    padding: 0.8rem 0.3rem;
+  }
+
+  /* left */
+
+  .player-left {
+    gap: 0.4rem;
+  }
+
+  .player-left img {
+    height: 30px;
+  }
+
+  /* center */
+
+  .footer-mid-top i {
+    padding: 0 0.5rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1rem;
+  }
+
+  footer i {
+    font-size: 0.8rem;
+  }
+
+  .footer-mid-bottom {
+    gap: 0.1rem;
+  }
+
+  /* right  */
+
+  .player-right {
+    gap: 0.4rem;
+  }
+
+  .player-right i {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -454,9 +498,54 @@ ____________ */
     width: calc((100% / 2) - var(--my-gap));
     aspect-ratio: 1/1;
   }
+  /* FOOTER */
+
+  footer {
+    padding: 0.8rem 0.3rem;
+  }
+
+  /* left */
+
+  .player-left {
+    gap: 0.4rem;
+  }
+
+  .player-left img {
+    height: 30px;
+  }
+
+  /* center */
+
+  .footer-mid-top i {
+    padding: 0 0.5rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1rem;
+  }
+
+  footer i {
+    font-size: 0.8rem;
+  }
+
+  .footer-mid-bottom {
+    gap: 0.1rem;
+  }
+
+  /* right  */
+
+  .player-right {
+    gap: 0.4rem;
+  }
+
+  .player-right i {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  /* ASIDE  */
+
   .aside-nav {
     padding-right: 0;
   }
@@ -494,5 +583,49 @@ ____________ */
 
   .playlist-ul li {
     display: none;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 0.8rem 0.3rem;
+  }
+
+  /* left */
+
+  .player-left {
+    gap: 0.4rem;
+  }
+
+  .player-left img {
+    height: 30px;
+  }
+
+  /* center */
+
+  .footer-mid-top i {
+    padding: 0 0.5rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1rem;
+  }
+
+  footer i {
+    font-size: 0.8rem;
+  }
+
+  .footer-mid-bottom {
+    gap: 0.1rem;
+  }
+
+  /* right  */
+
+  .player-right {
+    gap: 0.4rem;
+  }
+
+  .player-right i {
+    font-size: 0.6rem;
   }
 }
