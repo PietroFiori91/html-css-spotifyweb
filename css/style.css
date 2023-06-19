@@ -195,9 +195,31 @@ ____________ */
   gap: var(--my-gap);
   margin-bottom: 2rem;
 }
+
 .card {
   width: calc((100% / 6) - var(--my-gap));
   aspect-ratio: 1/1;
+  position: relative;
+}
+
+.hover-img {
+  /* position: relative; */
+}
+
+.hover-btn {
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  color: white;
+  display: none;
+}
+
+.hover-img:hover {
+  opacity: 25%;
+}
+
+.hover-btn:hover {
+  display: block;
 }
 
 h2 {
