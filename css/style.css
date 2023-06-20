@@ -199,10 +199,11 @@ ____________ */
 .card {
   width: calc((100% / 6) - var(--my-gap));
   aspect-ratio: 1/1;
+  position: relative;
 }
 
-.hover-img {
-  position: relative;
+.hover-img:hover {
+  opacity: 25%;
 }
 
 .hover-btn {
@@ -213,10 +214,6 @@ ____________ */
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   display: none;
-}
-
-.hover-img:hover {
-  opacity: 25%;
 }
 
 .hover-btn:hover {
